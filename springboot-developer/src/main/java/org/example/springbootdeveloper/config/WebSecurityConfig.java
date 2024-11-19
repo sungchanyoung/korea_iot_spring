@@ -35,7 +35,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
  * - JWT 필터를 적용하여 인증을 처리, CORS 및 CSRF 설정을 비활성화
  *   > 서버 간의 통신을 원활하게 처리
  * 토큰 생성 , 클라이언트가 저장
- * */
+ */
 @Configuration
 // 해당 클래스가 Spring의 설정 클래스로 사용됨을 명시
 // : Spring이 고나리하는 객체를 생성하는데 사용

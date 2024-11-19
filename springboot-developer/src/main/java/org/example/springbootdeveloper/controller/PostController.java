@@ -44,6 +44,8 @@ public class PostController {
             ResponseDto<PagedResponseDto<PostResponseDto>> result = postService.getPosts(page, size);
             return ResponseEntity.status(HttpStatus.OK).body(result);
         } catch (Exception e) {
+            //예외가 발생했을때, 예외의 전체 스택 트레이스 출력하는 메서드 입니다
+            //-주로 디버깅 하는 목적사용
             e.printStackTrace();
             return  ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }

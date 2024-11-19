@@ -81,11 +81,11 @@ public class PostService {
               * ,특정 페이지에 대한 데이터와 페이징 정보를 포함한 객체
               *  조회된 데이터 목록뿐 만 아니라 페이징과 관련되 메타 정보도 함께 제공
               *  주요 메서드
-              *  : getContect-현재 페리지 데이터 모록
-              *  :  getNumber- 현재 페리지 번호 반환(0~~~~)
-              *  : gitSize() : 한 페이지에 포함한 수 반환
-              *   getTotalPages:전체 페리지 수 반환
-              *   get total Elements 전체 페이지수반환
+              *  : get Contect - 현재 페리지 데이터 모록
+              *  : get Number - 현재 페리지 번호 반환(0~~~~)
+              *  : git Size() : 한 페이지에 포함한 수 반환
+              *    get TotalPages : 전체 페리지 수 반환
+              *    get total Elements 전체 페이지수 반환
               *
               *   of 메서드는 쉽게 PageRequest 객체를 생성할 수 있도록 도와줘
               *  */

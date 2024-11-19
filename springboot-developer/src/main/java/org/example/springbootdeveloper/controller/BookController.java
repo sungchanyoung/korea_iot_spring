@@ -1,6 +1,7 @@
 package org.example.springbootdeveloper.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example.springbootdeveloper.common.constant.ApiMappingPattern;
 import org.example.springbootdeveloper.dto.request.BookRequestDTO;
 import org.example.springbootdeveloper.dto.request.BookRequestUpdateDTO;
 import org.example.springbootdeveloper.dto.response.BookResponseDTO;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/books")
+@RequestMapping(ApiMappingPattern.BOOK)
 @RequiredArgsConstructor
 //초기화  되지 않은 final 필드나 @NonNull이 붙은 필드에 대해 생성자를 생성
 public class BookController {

@@ -62,7 +62,7 @@ public class JwtProvider {
      * @param : 사용자 정보 (User 객체)
      * @return : 생성된 JWT 토큰 문자열
      * */
-    public String generateJwtToken(String userId) {
+    public String generateJwtToken(String userId) {//이메일 인증 사용할건데
         return Jwts.builder()
                 .claim("userId", userId) // 클레임에 사용자 ID 저장 (사용자의 고유 ID)
                 .setIssuedAt(new Date()) // 현재 시간을 기준으로 토큰 발행 시간 설정
